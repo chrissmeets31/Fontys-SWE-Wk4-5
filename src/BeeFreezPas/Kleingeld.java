@@ -16,14 +16,33 @@ import Exceptions.SaldoNietNegatiefException;
 public class Kleingeld
     extends BeeFreezPas
 {
-    
+    /**
+     * 
+     * @param nummer
+     * @param houder 
+     */
     public Kleingeld(long nummer, String houder) {
         super(nummer, houder);
     }
+    
+    /**
+     * 
+     * @param nummer
+     * @param houder
+     * @param bedrag 
+     */
     public Kleingeld(long nummer, String houder, double bedrag) {
         super(nummer, houder, bedrag);
     }
     
+    /**
+     * 
+     * @param bedrag
+     * @return
+     * @throws SaldoNietNegatiefException
+     * @throws KredietlimietBereiktException
+     * @throws BedragMaximumBereiktException 
+     */
     @Override
     public boolean betaal(double bedrag)
             throws SaldoNietNegatiefException, KredietlimietBereiktException, BedragMaximumBereiktException
