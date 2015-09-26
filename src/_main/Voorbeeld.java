@@ -18,7 +18,7 @@ public class Voorbeeld {
      * Voorbeeld
      */
     public Voorbeeld(){
-        Normaal normaal = new Normaal(1,"Voorbeeld", 15);
+        Normaal normaal = new Normaal(1, "Voorbeeld", 15);
         try{
             double bedrag = 15;
             boolean result;
